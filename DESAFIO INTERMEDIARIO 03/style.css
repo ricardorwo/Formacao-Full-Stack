@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #EFEFEF;
+}
+
+.cabecario {
+  margin: 0 auto 0;
+  width: 1440px;
+  height: 436px;
+  background: #535971;
+  position: absolute;
+  z-index: 0;
+}
+
+.titulo-1 {
+  color: #FFF;
+  font-family: "Staatliches", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-left: 345px;
+  margin-top: 140px;
+}
+
+.titulo-2 {
+  width: 417px;
+  height: 46px;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 345px;
+  margin-top: 18px;
+
+}
+
+.formulario {
+  width: 750px;
+  height: 1084px;
+  border-radius: 20px 20px 0px 0px;
+  background: #FFF;
+  margin-left: 345px;
+  margin-top: 322px;
+  padding: 64px;
+  position: absolute;
+  z-index: 1;
+}
+
+.formulario-legenda {
+  width: 200px;
+  height: 34px;
+  color: #535971;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  border-bottom: solid 1px #E6E6F0;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.fieldset {
+  border: none;
+}

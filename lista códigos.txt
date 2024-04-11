@@ -1,0 +1,90 @@
+HTML:
+
+<!-- (para inserir textos que não influenciam no código)
+
+<header> (cabeçalho) - Tag semantica
+<main> (principal) - Tag semantica
+<footer> (rodapé) - Tag semantica
+<img> (imagem)
+src= (procurar na pasta x/arquivo)
+alt= (atributo, alternativo para mostrar imagem)
+<div> (Tag, serve para fazer agrupamento - elemento em bloco)
+id (identificador) - não pode haver repetidos no código
+<h1> ao <h6> (usado para títulos - cabeçário)
+<p> (parágrafo)
+<a> (referencia ou palavra, usado para endereço de site
+     elemento em linha, um do lado do outro)
+href= (referencia algo, endereço de site ou outro)
+<span> (tag utilizada para agrupar e estilizar partes de
+        um texo. Elemento em linha)
+<strong> (negrito dentro do texto, destaque para palavra forte)
+link: (usado para acessar recursos externos da página,
+       como CSS por exemplo)
+Id não pode ficar repetindo, se quiser repetir usar o
+class (classificação de elementos) - podem haver varios repetidos no código
+target=_blank (abrir seleção em nova aba)
+<nav> (seção que aponta outras páginas para navegação)
+<ul> (lista não ordenada)
+<ol> (lista ordenada)
+text (geralmente usado depois de class, é um texto)
+section (pode ser usado em seção de texto, usar no lugar do div, pode ser usada várias vezes)
+<butoon> (botão)
+<b> "bold" - deixar a palavra ou texto em negrito
+<i> (deixar palavra ou texto em itálico)
+<em> (deixa em itálico porém á enfase)
+<q> (coloca a palavram em aspas)
+
+<u> (sublinhado no texto)
+<ins> (sublinhado também, porém como significado de substituir outra palavra errada)
+<s> (texto riscado)
+<del> (riscado também, porém com sentido de exclusão de uma palavra)
+<hr> (linha separando paragrafos)
+<pre> (geralmente usado para inserir um código no texto, pois mantem todos espaços)
+input ( usado para criar controles interativos para formulários baseados na web para receber dados do usuário)
+label (representa uma legenda para um item em uma interface de usuário)
+input:password
+input:number
+input:checkbox
+select (seleção de opções)
+option (opção de texto, trabalha junto com o select)
+textarea (caixa-área para escrever texto)
+<fieldset> (elemento usado para agrupar elementos no formulário)
+<legend> (rótulo para seu elemento anterior <fieldset>)
+
+CSS:
+
+font-family: (família de fonte)
+font-size: (tamanho da fonte)
+line-weight: (altura da fonte-texto)
+text-align: (alinhamento de texto e outros no centro da pagina)
+width: (largura da caixa)
+<br> (break - quebra de texto)
+margin-top: (margem superior)
+margin-right: (margem direita)
+margin-bottom: (margem inferior)
+margin-left: (margem esquerda)
+position: fixed (posição do objeto, fixado)
+/* (inserir comentario no css)
+border (borda da caixa)
+padding (distância entre o conteúdo e suas bordas)
+display: flex (torna a caixa flexível, por padrão elementos ficam
+         em linha)
+gap: (ajusta o espaço entre linhas e colunas)
+hover ("passar do mouse em cima")
+text-decoration (se "none", texto sem decoração)
+text-transform: uppercase (texto com tudo maiúsculo)
+Background (cor de fundo de uma caixa)
+cursor: pointer (maozinha quando passa o mouse em cima)
+background: linear gradient (cj de cores e gradientes)
+min-height: 100vh (minimo de area disponível)
+opacity: 0.5 (opacidade do texto ou imagem)
+* { } - reseta as configuraçoes pre configuradas no CSS
+box-sinzing: border-box (mantem o tamanho do conteudo independente
+da borda utilizada)
+
+Regra para margin e padding:
+
+(A,B,C,D) - top/right/bottom/left
+(A) - serve para todos
+(A,B) - A top-bottom / B right-left
+(A,B,C) - A top / B right e left / C bottom

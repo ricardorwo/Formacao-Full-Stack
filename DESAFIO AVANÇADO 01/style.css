@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: #2C2B3D;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 71px;
+}
+
+.cabecalho-logo {
+  width: 168px;
+  height: 23px;
+  margin-left: 101px;
+
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 64px;
+  margin-right: 99px;
+}
+
+.cabecalho-menu-item {
+  color: #FFF;
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.cabecalho-menu-item:hover {
+  font-weight: 900;
+  color: #00BFA6;
+}
+
+.conteudo {
+  margin-bottom: 157px;
+}
+
+.conteudo-principal {
+  display: flex;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.conteudo-imagem {
+  width: 401px;
+  margin-top: 109px;
+  margin-left: 99px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 36px;
+  margin-top: 107px;
+  margin-bottom: 59px;
+  margin-right: 89px;
+
+}
+
+.conteudo-principal-escrito-titulo span {
+  color: #00BFA6;
+}
+
+.conteudo-principal-escrito-paragrafo {
+  font-family: "Open Sans", sans-serif;
+  color: #C2C2C2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
+  width: 604px;
+}
+
+.conteudo-principal-escrito-paragrafo span {
+  color: #00BFA6;
+  font-weight: 700;
+}
+
+.rodape {
+ text-align: center;
+ color: #FFF;
+ font-family: "JetBrains Mono";
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 28px; /* 200% */
+ margin-bottom: 23px;
+}
+
+footer a:hover {
+  font-weight: 900;
+  color: #00BFA6;
+}
+
+.line {
+  width: 568px;
+  height: 1px;
+  background: #00BFA6;
+  margin: 0 auto 27px;
+}
+
+.rodape-imagem {
+  width: 51px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+
+}
+
+.rodape-escrito {
+  width: 462px;
+  color: #FFF;
+  font-family: "JetBrains Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 200% */
+}
