@@ -91,8 +91,11 @@ Regra para margin e padding:
 
 GIT:
 
-ls (listar)
+ls (listar todas as pastas dentro do diretorio)
 cd (escolher diretorio)
 cd .. (voltar uma pasta)
 code . (abrir vs na pasta)
 git add . (adiciona a area staging todos os arquivos que foram alterados)
+git commit -m "texto descrevendo a alteração" (cria um commit para todos os arquivos que estão na area staging)
+git log (todos registros)
+git push (upload de todos arquivos do commit e jogar no github).
