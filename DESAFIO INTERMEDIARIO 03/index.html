@@ -23,15 +23,16 @@
 <form class="formulario">
   <fieldset class="fieldset">
     <legend class="formulario-legenda">INFORMAÇÕES PESSOAIS</legend>
+    <div class="nome-sobrenome">      
+      <div class="input-wrapper">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+      </div>
 
-    <div class="input-wrapper">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome">
-    </div>
-
-    <div class="input-wrapper">
-      <label for="sobrenome">Sobrenome</label>
-      <input type="text" id="sobrenome">
+      <div class="input-wrapper">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome">
+      </div>
     </div>
 
     <div class="input-wrapper">
@@ -41,14 +42,73 @@
 
     <div class="input-wrapper">
       <label for="senha">Senha <span>(mínimo de 6 caracteres)</span></label>
-      <input type="password" id="email">
+      <input type="password" id="password">
     </div>
+  </fieldset>
 
+  <fieldset class="fieldset-2">
+    <legend class="formulario-legenda">INFORMAÇÕES DO MENTOR</legend>
+    <div class="input-wrapper">
+      <label for="text">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+      <input type="text" id="text">
+    </div>
+  </fieldset>
 
+  <fieldset class="fieldset-3">
+    <legend class="formulario-legenda">SEUS HORÁRIOS DISPONÍVEIS</legend>
+    <legend class="formulario-legenda-2">PRIMEIRA MENTORIA</legend>
+  </fieldset>
 
+  <fieldset class="fieldset-4">
+    <legend class="formulario-legenda-3"></legend>
+    <div class="campos-3">
 
+      <div class="input-wrapper">
+        <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+        <input type="date" id="data">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="inicio">Das</label>
+        <input type="time" id="inicio">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="fim">Até</label>
+        <input type="time" id="fim">
+      </div>
+    </div>
+  </fieldset>
+
+  <legend class="formulario-legenda-2">SEGUNDA MENTORIA</legend>
+  <fieldset class="fieldset-4">
+    <legend class="formulario-legenda-3"></legend>
+    <div class="campos-3-2">
+
+      <div class="input-wrapper">
+        <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+        <input type="date" id="data">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="inicio">Das</label>
+        <input type="time" id="inicio">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="fim">Até</label>
+        <input type="time" id="fim">
+      </div>
+    </div>
   </fieldset>
 </form>
+
+<footer class="caixa-footer">
+  <input 
+    class="botao-salvar" 
+    type="submit" 
+    value="SALVAR">
+</footer>
 
 <body>
   

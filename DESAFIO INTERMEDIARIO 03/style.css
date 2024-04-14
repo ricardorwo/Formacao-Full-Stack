@@ -15,6 +15,7 @@ body {
   background: #535971;
   position: absolute;
   z-index: 0;
+  
 }
 
 .titulo-1 {
@@ -35,7 +36,6 @@ body {
   font-weight: 400;
   margin-left: 345px;
   margin-top: 18px;
-
 }
 
 .formulario {
@@ -60,9 +60,168 @@ body {
   line-height: 34px;
   border-bottom: solid 1px #E6E6F0;
   width: 100%;
-  padding-bottom: 32px;
+  margin-bottom: 36px;
+  padding-bottom: 40px;
+}
+
+.formulario-legenda-2 {
+  width: 200px;
+  height: 34px;
+  color: #535971;
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  width: 100%;
 }
 
 .fieldset {
   border: none;
+  width: 84px;
+  height: 24px;
+  color: #4E4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.fieldset-2 {
+  border: none;
+  width: 84px;
+  height: 24px;
+  color: #4E4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 330px;
+  width: 212px;
+  height: 34px;
+}
+
+.fieldset-3 {
+  border: none;
+  width: 239px;
+  height: 34px;
+  color: #4E4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 120px;
+  height: 34px;
+}
+
+.fieldset-4 {
+  border: none;
+  width: 239px;
+  height: 34px;
+  color: #4E4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 120px;
+  height: 34px;
+}
+
+.nome-sobrenome {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+
+.input-wrapper {
+  margin-bottom: 19px;
+}
+
+#nome, #sobrenome, #email, #password, #text, #inicio, #fim, #data {
+  margin-top: 8px;
+  width: 300px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+  display: flex;
+
+  color:#413c4d88;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 15px;
+}
+
+#email, #password, #text {
+  width: 622px;
+  height: 56px;
+}
+
+.input-wrapper span {
+  color: #C1BCCC;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.input-wrapper span:hover {
+  color: #443663;
+}
+
+.campos-3 {
+  display: flex;
+  gap: 32px;
+  margin-top: -80px;
+}
+
+.campos-3-2 {
+  display: flex;
+  gap: 32px;
+  margin-top: -110px;
+}
+
+#data, #inicio, #fim {
+  width: 300px;
+  color:#C1BCCC;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+#inicio, #fim {
+  width: 140px;
+}
+
+.caixa-footer {
+  position: absolute;
+  width: 750px;
+  height: 160px;
+  margin-top: 1406px;
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+  margin-left: 345px;
+}
+
+.botao-salvar {
+  width: 608px;
+  height: 56px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #FF5374;
+  color: #FFF;
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 52px 71px;
+  border: none;
+}
+
+.botao-salvar:hover{
+  background: #c05367;
 }

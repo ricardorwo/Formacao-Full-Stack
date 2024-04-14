@@ -88,3 +88,11 @@ Regra para margin e padding:
 (A) - serve para todos
 (A,B) - A top-bottom / B right-left
 (A,B,C) - A top / B right e left / C bottom
+
+GIT:
+
+ls (listar)
+cd (escolher diretorio)
+cd .. (voltar uma pasta)
+code . (abrir vs na pasta)
+git add . (adiciona a area staging todos os arquivos que foram alterados)
