@@ -225,7 +225,3 @@ body {
 .botao-salvar:hover{
   background: #c05367;
 }
-
-input:invalid {
-  border: 1px solid red;
-}
