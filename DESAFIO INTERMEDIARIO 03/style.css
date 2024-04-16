@@ -38,7 +38,7 @@ body {
   margin-top: 18px;
 }
 
-.formulario {
+#formulario {
   width: 750px;
   height: 1084px;
   border-radius: 20px 20px 0px 0px;
@@ -224,4 +224,8 @@ body {
 
 .botao-salvar:hover{
   background: #c05367;
+}
+
+input:invalid {
+  border: 1px solid red;
 }

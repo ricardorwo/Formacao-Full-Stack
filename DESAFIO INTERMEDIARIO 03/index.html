@@ -20,18 +20,18 @@
   </div>
 </header>
 
-<form class="formulario">
+<form id="formulario">
   <fieldset class="fieldset">
     <legend class="formulario-legenda">INFORMAÇÕES PESSOAIS</legend>
     <div class="nome-sobrenome">      
       <div class="input-wrapper">
         <label for="nome">Nome</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" required>
       </div>
 
       <div class="input-wrapper">
         <label for="sobrenome">Sobrenome</label>
-        <input type="text" id="sobrenome">
+        <input type="text" id="sobrenome" required>
       </div>
     </div>
 
@@ -42,7 +42,11 @@
 
     <div class="input-wrapper">
       <label for="senha">Senha <span>(mínimo de 6 caracteres)</span></label>
-      <input type="password" id="password">
+      <input 
+        type="password" 
+        id="password" 
+        required
+        minlength="8">
     </div>
   </fieldset>
 
@@ -106,7 +110,8 @@
 <footer class="caixa-footer">
   <input 
     class="botao-salvar" 
-    type="submit" 
+    type="submit"
+    form="formulario"
     value="SALVAR">
 </footer>
 

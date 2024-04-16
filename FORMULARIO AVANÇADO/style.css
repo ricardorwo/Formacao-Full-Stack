@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo {
+  text-transform:uppercase;
+}
+
+.cabecario {
+  width: 100%;
+  height: 465px;
+  background: #293241;
+  position: absolute;
+}
+
+.titulo {
+  width: 282px;
+  height: 45px;
+  color: #FFF;
+  font-family: "Staatliches", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  margin-top: 107px;
+}
+
+p {
+  width: 391px;
+  height: 46px;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+.imagem-1 {
+  display: block;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+
+body {
+  background: #BFD7E4;
+  width: 1440px;
+  height: 1930px;
+}
+
+#formulario {
+  width: 750px;
+  height: 2000px;
+  border-radius: 0px 0px 20px 20px;
+  background: #FFF;
+  margin: 0 auto;
+}
+
+.legend-top {
+  width: 750px;
+  height: 133px;
+  border-radius: 20px 20px 0px 0px;
+  background: #F67669;
+  position: absolute;
+  margin-top: -168px;
+  margin-left: -64px;
+  border: none;
+
+  color: #FFF;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  padding: 50px;
+}
+
+.fieldset {
+  color: #4E4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+  width: 43px;
+  height: 24px;
+  margin-top: 500px;
+  border: none;
+  padding-left: 64px
+}
+
+#input-nome, #input-sobrenome, #input-mentor {
+  width: 300px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+  padding-left: 10px;
+
+  color:#413c4d88;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.nome-sobrenome {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 19px;
+}
+
+#input-email {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+  padding-left: 10px;
+
+  color:#413c4d88;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.input-wrapper span {
+  color: #C1BCCC;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.fieldset-2 {
+  border: none;
+  position: absolute;
+  margin-top: 710px;
+  text-align: center;
+  height: 34px;
+  color: #253B51;
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.input-wrapper-2 {
+  height: 24px;
+  color: #4E4958;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 32px;
+  padding-left: 64px;
+}
+
+.legend-2 {
+  border-bottom: 1px solid #E6E6F0;
+  width: 622px;
+  margin-left: 43px;
+  padding-bottom: 8px;
+}
+
+.label-mentor {
+  display: flex;
+  width: 234px;
+}
+
+#input-mentor {
+  position: absolute;
+  margin-left: -300px;
+  margin-top: 10px;
+  width: 300px;
+  height: 56px;
+}
+
+.label-feedback {
+  display: flex;
+  width: 188px;
+  margin-top: 90px;
+}
+
+#input-feedback {
+  position: absolute;
+  margin-left: -300px;
+  margin-top: 10px;
+  width: 608px;
+  height: 167px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+}
