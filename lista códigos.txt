@@ -81,6 +81,8 @@ opacity: 0.5 (opacidade do texto ou imagem)
 * { } - reseta as configuraçoes pre configuradas no CSS
 box-sinzing: border-box (mantem o tamanho do conteudo independente
 da borda utilizada)
+:root (aplica a estilização em todo documento HTML)
+clamp (ajusta também as telas - estudar)
 
 Regra para margin e padding:
 

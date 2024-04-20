@@ -85,6 +85,32 @@ span {
   letter-spacing: -2pix;
 }
 
+/* media queries */
+
+@media (min-width: 40em) {
+  body {
+    padding: 8rem;
+  }
+
+  main {
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+  }
+  .caixa-1 {
+    max-width: 485px;
+  }
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
+  ul {
+    margin-bottom: 8.0rem;
+  }
+}
+
 
 
 
