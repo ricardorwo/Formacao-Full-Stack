@@ -90,6 +90,7 @@ align-itens (alinha o eixo Y)
 justify-itens (alinha o eixo X)
 place-itens (junção dos dois eixos para alinhamento)
 grid-auto-columns (ajuste automatico para colunas no grid)
+overflow: hidden (usado para esconder parte de um elemento)
 
 Regra para margin e padding:
 
