@@ -91,6 +91,10 @@ justify-itens (alinha o eixo X)
 place-itens (junção dos dois eixos para alinhamento)
 grid-auto-columns (ajuste automatico para colunas no grid)
 overflow: hidden (usado para esconder parte de um elemento)
+overflow-y: scroll (aplica a rolagem apenas neste item)
+object-fit: cover (ajusta a imagem tirando o achatamento)
+filter (aplica vários tipos de filtros em imagens)
+transform (aplica vario tipos de efeitos na imagem)
 
 Regra para margin e padding:
 
