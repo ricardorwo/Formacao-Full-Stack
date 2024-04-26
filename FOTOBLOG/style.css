@@ -119,11 +119,13 @@ main h1 {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
-  filter: grayscale(1);
 }
 
 .details {
   padding: 2.3rem;
+  background-color: white;
+  z-index: 1;
+  position: relative;
 }
 
 h2 {
@@ -146,6 +148,7 @@ h2 {
 .item img:hover {
   filter: hue-rotate(7deg) contrast(105%) saturate(200%);
   transform: scale(1.1);
+  rotate: -2deg;
 }
 
 span {
