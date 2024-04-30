@@ -96,6 +96,7 @@ object-fit: cover (ajusta a imagem tirando o achatamento)
 filter (aplica vários tipos de filtros em imagens)
 transform (aplica varios tipos de efeitos na imagem)
 transition (aplica efeitos na imagem)
+outline (retira o cotorno de seleção na caixa em questão)
 
 Regra para margin e padding:
 
