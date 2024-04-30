@@ -11,6 +11,7 @@
 }
 
 body {
+  font-size: 1.6rem;
   background-color: rgb(255, 255, 255);
   height: 100vh;
 }
@@ -81,7 +82,7 @@ header nav ul {
 }
 
 .logo img {
-  width: 170px;
+  width: 17.0rem;
 }
 
 /* ESTILO DO TOPO DO SITE */
@@ -92,7 +93,7 @@ header nav ul {
 }
 
 .img-topo-site img {
-  width: 400px;
+  width: 40.0rem;
   margin-bottom: 1.0rem;
   border-radius: 3.0rem;
 
@@ -215,8 +216,8 @@ h2.titulo span {
 }
 
 .btn-social button {
-  width: 60px;
-  height: 60px;
+  width: 6.0rem;
+  height: 6.0rem;
   border-radius: 50%;
   border: none;
   background-color: #005bab;
@@ -242,8 +243,8 @@ h2.titulo span {
 }
 
 .projeto {
-  width: 360px;
-  height: 460px;
+  width: 36.0rem;
+  height: 46.0rem;
   background-size: cover;
   background-position: 1% 0%;
   transition: 8s;
@@ -319,7 +320,7 @@ textarea::placeholder {
 }
 
 form textarea {
-  max-height: 200px;
+  max-height: 20.0rem;
   resize: none;
 }
 
@@ -331,7 +332,7 @@ form textarea {
 }
 
 .botao-enviar {
-  width: 120px;
+  width: 12.0rem;
   background-color: #005bab;
   color: white;
   font-weight: 700;
@@ -352,7 +353,7 @@ box-shadow: 0 0 4.0rem 1.0rem #005bab5b;
 }
 
 .logo-footer img {
-  width: 100px;
+  width: 10.0rem;
 }
 
 .parte-cima {
@@ -362,8 +363,8 @@ box-shadow: 0 0 4.0rem 1.0rem #005bab5b;
 }
 
 .parte-cima .btn-social button {
-  width: 40px;
-  height: 40px;
+  width: 4.0rem;
+  height: 4.0rem;
   margin-top: .8rem;
 }
 
@@ -406,7 +407,7 @@ box-shadow: 0 0 4.0rem 1.0rem #005bab5b;
   }
 
   .img-topo-site img {
-    max-width: 350px;
+    max-width: 35.0rem;
   }
 
   .topo-do-site {
@@ -467,8 +468,8 @@ box-shadow: 0 0 4.0rem 1.0rem #005bab5b;
   /* FOOTER */
 
   .parte-cima .btn-social button {
-    width: 30px;
-    height: 30px;
+    width: 3.0rem;
+    height: 3.0rem;
     margin-top: .8rem;
     font-size: 1.5rem;
   }
