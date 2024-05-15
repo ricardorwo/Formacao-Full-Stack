@@ -1,7 +1,7 @@
 /* 
 Solicitar o nome do aluno e as 3 notas do bimestre calcular a média daquele aluno.
 
-A média positivoa deverá ser maior que 6.
+A média positiva deverá ser maior que 6.
 
 Se o aluno passou no bimestre, dar os parabéns.
 
