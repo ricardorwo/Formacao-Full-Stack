@@ -4,7 +4,6 @@ const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
 const openCookie = document.querySelector("#openCookie")
 const btnOpenCookieReset = document.querySelector("#btnOpenCookieReset")
-const randomPhrases = Math.floor(Math.random() * phrases.length)
 
 
 let phrases = [
@@ -15,6 +14,7 @@ let phrases = [
   'Quando você contrata pessoas mais inteligentes do que você, prova que é mais inteligente do que elas.'
 ]
 
+const randomPhrases = Math.floor(Math.random() * phrases.length)
 
 // Funções:
 
