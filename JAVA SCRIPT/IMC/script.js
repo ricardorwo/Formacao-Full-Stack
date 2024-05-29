@@ -1,32 +1,42 @@
 // variáveis - variables
 
 const form = document.querySelector('form')
-const inputPeso = document.querySelector('#peso')
-const inputAltura = document.querySelector('#altura')
+const inputWeight = document.querySelector('#height')
+const inputHeight = document.querySelector('#height')
 
+const Modal = {
 
+  wrapper: document.querySelector('.modal-wrapper'),
+  message: document.querySelector('.message'),
+  buttonClose: document.querySelector('.close'),
 
-// 3 maneiras de criar e atribuir função a um evento
-
-// 1
-// form.onsubmit = function() {}
-
-//2
-// form.onsubmit = () => {}
-
-// //3
-// form.onsubmit = handleSubmit
-// function handleSubmit
-
-// Para fins didaticos vamos escolher a primeira opção:
+  add() { //mesma coisa que: add: function() {}
+    Modal.wrapper.classList.add('hide')
+  },
+  remove() {
+    Modal.wrapper.classList.remove('hide')
+  }
+}
 
 form.onsubmit = event => {
   event.preventDefault()
 
-  const peso = inputPeso.value
-  const altura = inputAltura.value
+  const weight = inputWeight.value
+  const height = inputHeight.value
 
-  console.log(peso, altura)
+  const result = IMC(weight, height)
+  const message = `Seu IMC é de ${result}`
+
+  Modal.message.innerText = message
+  Modal.remove()
+}
+
+Modal.buttonClose.onclick = () => {
+  Modal.add()
+}
+
+function IMC(weight, height) {
+  return ((weight / (height / 100) ** 2)).toFixed(2)
 }
 
 

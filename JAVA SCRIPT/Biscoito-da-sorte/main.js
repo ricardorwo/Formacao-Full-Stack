@@ -14,11 +14,10 @@ let phrases = [
   'Quando você contrata pessoas mais inteligentes do que você, prova que é mais inteligente do que elas.'
 ]
 
-const randomPhrases = Math.floor(Math.random() * phrases.length)
-
 // Funções:
 
 function open(event) {
+  const randomPhrases = Math.floor(Math.random() * phrases.length)
   event.preventDefault()
   screen1.classList.add("hide")
   screen2.classList.remove("hide")

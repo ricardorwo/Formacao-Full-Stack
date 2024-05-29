@@ -19,22 +19,21 @@
 <body>
   <main>
 
-    <div class="alert-error">
+    <div class="alert-error hide">
       Digite somente números
     </div>
-
 
     <div class="card">
       <form id="formulario">
         <h1>Cálculo de IMC</h1>
         <div class="input-wrapper">
-          <label for="peso">Peso (kg)</label>
-          <input id="peso" type="number" placeholder="60">
+          <label for="weight">Peso (kg)</label>
+          <input id="weight" type="number" placeholder="60">
         </div>
 
         <div class="input-wrapper">
-          <label for="altura">Altura (cm)</label>
-          <input id="altura" type="number" placeholder="170">
+          <label for="height">Altura (cm)</label>
+          <input id="height" type="number" placeholder="170">
         </div>
 
         <button type="submit">
@@ -47,7 +46,7 @@
   
     <div class="modal-wrapper hide">
       <div class="modal-card">
-        <h2>Seu IMC é de 28</h2>
+        <h2 class="message">Seu IMC é de 28</h2>
         <button class="close">
           <img src="./images/close.svg" alt="">
         </button>
