@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+}
+
+button {
+  width: 4rem;
+  padding: 0.2rem 0;
+  background-color: rgb(52, 117, 179);
+  color: black;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#buttons {
+  display: flex;
+  gap: 0.5rem;
+}
