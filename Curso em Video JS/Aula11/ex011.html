@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasileiro ou Estrangeiro</title>
+  <style>
+    body {
+      background: rgb(231, 130, 130);
+    }
+    label, .resultado {
+      font-size: 18px;
+    }
+    #txt-nacionalidade {
+      border: none;
+      border-radius: 10px;
+      width: 200px;
+      height: 25px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .botao {
+      width: 80px;
+      height: 20px;
+      background: red;
+      color: white;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Pessoa brasileira ou estrangeira?</h1>
+  <label for="">Digite aqui sua nacionalidade:</label> <br>
+  <input type="text" id="txt-nacionalidade">
+  <input class="botao" type="button" value="Checar">
+  <div class="resultado"></div>
+
+  <script>
+    var check = document.querySelector('.botao')
+    check.addEventListener('click', checar)
+
+    function checar() {
+      var txt = document.querySelector('#txt-nacionalidade')
+      var res = document.querySelector('.resultado')
+      if(txt.value == 'Brasileiro') {
+        res.innerHTML = `Você nasceu no Brasil!`
+      } else {
+        res.innerHTML = `Você nasceu em outro país, logo é estrangeiro!`
+      }
+
+    }
+
+  </script>
+  
+</body>
+</html>

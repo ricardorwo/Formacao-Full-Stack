@@ -146,3 +146,7 @@ typeof // tipo do dado
 {} // objeto vazio ou bloco de código
 [] // array vazio
 , // separa elementos de um array, objeto ou criação de multiplas variáveis
+
+//TERNARIOS
+
+
