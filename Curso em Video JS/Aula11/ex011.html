@@ -49,9 +49,20 @@
       if(txt.value == 'Brasileiro') {
         res.innerHTML = `Você nasceu no Brasil!`
       } else {
-        res.innerHTML = `Você nasceu em outro país, logo é estrangeiro!`
+        if(txt.value == 'brasileiro') {
+          res.innerHTML = `Você nasceu no Brasil!`
+        } else {
+          if(txt.value == 'Brasil') {
+            res.innerHTML = `Você nasceu no Brasil!`
+          } else {
+            if(txt.value == 'brasil') {
+              res.innerHTML = `Você nasceu no Brasil!`
+            } else {
+              res.innerHTML = `Você nasceu em outro país, logo é estrangeiro!`
+            }
+          }
+        }
       }
-
     }
 
   </script>
