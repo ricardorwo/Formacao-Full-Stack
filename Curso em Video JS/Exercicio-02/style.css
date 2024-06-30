@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-size: 1.4rem;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+.caixa {
+  width: 20rem;
+  height: 15rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem .5rem .1rem rgba(255, 255, 255, 0.479)
+}
+
+.caixa-sexo {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#botao {
+  background: rgb(230, 230, 76);
+  display: flex;
+  margin: 0 auto;
+  width: 5rem;
+  height: 2rem;
+  border-radius: .5rem;
+  border: none;
+  color: black;
+  font-weight: 700;
+  font-size: .7rem;
+  cursor: pointer;
+
+}
+
+h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+#nascimento {
+  width: 10rem;
+  height: 2rem;
+  margin: 0 auto;
+  border-radius: .2rem;
+  border: solid .5px blue;
+}
+
+.resultado {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer {
+  height: 2rem;
+  padding-top: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.637);
+  text-align: center;
+  color: greenyellow;
+}
+
+h2 {
+  font-size: 0.2rem;
+}
+
+#label-nascimento {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+#sexo {
+  cursor: pointer;
+}
+
+img {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.caixa-maior {
+  display: flex;
+  place-content: center;
+  gap: 2rem;
+}
