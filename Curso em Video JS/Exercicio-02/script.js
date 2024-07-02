@@ -12,7 +12,7 @@ function verificar() {
   } else {
     const sexo = document.getElementsByName('sexo')
     const idade = anoAtual - nascimento.value
-    const genero = '' 
+    let genero = '' 
     const img = document.querySelector('#foto')
     
 
@@ -55,6 +55,7 @@ function verificar() {
     }
     resultado.innerHTML = `Detectamos ${genero} com ${idade} anos.`
   }
-
-  botao.addEventListener('click', verificar)
+  
 }
+
+botao.addEventListener('click', verificar)
