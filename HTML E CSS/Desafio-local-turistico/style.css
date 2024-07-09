@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 4rem 4% 5rem;
+  font-size: 1.6rem;
+}
+
+p {
+  color: #E1624F;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+h1 {
+  color: #1B1B1B;
+  font-size: 3.6rem;
+  margin-bottom: 4rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.legenda {
+  color: #333;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+
+h2 {
+  color: #1B1B1B;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.legenda2 {
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 6rem;
+  margin-top: .5rem;
+}
+
+.legenda3 span, span {
+  color: #0C51A7;
+  font-weight: 700;
+}
+
+.casais {
+  color: #591B98;
+  margin-top: -6rem;
+}
+
+.familias {
+  color: #E5245E;
+  margin-top: -1rem;
+}
+
+.orcamento {
+  color: #E95E10;
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+}
+
+.line {
+  border: solid 1px #d9d9d9ab;
+  margin-bottom: 4rem;
+}
+
+footer {
+  text-align: center;
+  font-family: "Alice", serif;
+  color: #333;
+  font-weight: 400;
+  margin-top: 6rem;
+}
+
+i {
+  color: #333;
+}
