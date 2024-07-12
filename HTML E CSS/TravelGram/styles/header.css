@@ -1,0 +1,39 @@
+.profile {
+  display: flex;
+  gap: 32px;
+}
+
+header .profile p {
+  width: 384px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-right: 150px;
+}
+
+.map, .airplane, .images {
+  display: flex;
+  gap: 8px;
+}
+
+.profile img {
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile .text h1 {
+  color: var(--text-color-primary);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.profile .text p {
+  color: var(--text-color-secondary);
+  font-size: 14px;
+  padding: 3px;
+}

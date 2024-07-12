@@ -1,0 +1,14 @@
+main {
+  width: 1216px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 24px auto 50px;
+}
+
+main img {
+  width: 286px;
+  height: 286px;
+  object-fit: cover;
+}

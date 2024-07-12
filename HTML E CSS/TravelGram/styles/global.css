@@ -32,9 +32,23 @@ a {
 
 a:hover {
   color: var(--brand-color);
-  text-decoration: underline;
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-top: 36px;
+  padding-bottom: 32px;
+  align-items: center;
+  background-color: var(--surface-color);
 }
 
 .container {
   max-width: 1280px;
+}
+
+footer {
+  background-color: var(--surface-color);
 }
