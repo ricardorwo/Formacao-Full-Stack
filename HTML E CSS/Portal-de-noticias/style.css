@@ -1,3 +1,5 @@
+/* ESTILO GERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +16,6 @@
   --text-color-secondary: #CBD5E1;
 
   --font-family: "Archivo", sans-serif;
-  --h1: 800 24px/135% var(var(--font-family));
-  --h2: 800 16px/140% var(var(--font-family));
-  --h3: 800 14px/140% var(var(--font-family));
-  --text-span: 600 14px/145% var(var(--font-family));
-  --text-standard: 400 16px/140% var(var(--font-family));
-  --text-p: 400 16px/140% var(var(--font-family));
 }
 
 body {
@@ -37,6 +33,210 @@ a:hover {
   color: var(--brand-color-light);
 }
 
-h1, h2, h3 {
-  font: inherit;
+
+
+/* ESTILO HEADER */
+
+#primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px 20px;
 }
+
+#secondary {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 14px 32px 14px;
+  color: var(--text-span);
+  border-top: 1px solid #1E293B;
+  border-bottom: 1px solid #1E293B;
+}
+
+.menu, .logo, .buscar {
+  align-items: center;
+  display: flex;
+}
+
+img {
+  border-radius: 5px;
+}
+
+
+/* ESTILO MAIN - CAIXA 1 */
+
+.menu, .buscar {
+  gap: 8px;
+}
+
+.caixa1 {
+  margin-top: 40px;
+  margin-left: 32px;
+  padding-bottom: 80px;
+  display: flex;
+  gap: 16px;
+}
+
+.main-1 {
+  display: flex;
+}
+
+.main-2 {
+  display: flex;
+  gap: 12.5px;
+  flex-wrap: wrap;
+}
+
+.main-1 .robotica img {
+  width: 608px;
+  filter: brightness(0.4);
+}
+
+.robotica p {
+  width: 560px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 135%;
+
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+
+.robotica {
+  position: relative;
+}
+
+.main-2 img {
+  width: 288px;
+  filter: brightness(0.4);
+  position: relative;
+}
+
+.hologramas p, .internet p, .vestiveis p, .realidade-virtual p {
+  width: 264px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+
+  position: absolute;
+  top: 65%;
+  left: 5%;
+}
+
+.robotica h2 {
+  width: 80px;
+  height: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px; /* igualando ao "height" ele centraliza verticalmente */
+  border-radius: 4px;
+  background-color: var(--brand-color-dark);
+  box-shadow: 0px 4px 16px 0px rgba(20, 20, 20, 0.25);
+
+  position: absolute;
+  top: 62%;
+  left: 5%;
+}
+
+.main-2 h2 {
+  width: 80px;
+  height: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px; /* igualando ao "height" ele centraliza verticalmente */
+  border-radius: 4px;
+  background-color: var(--brand-color-dark);
+  box-shadow: 0px 4px 16px 0px rgba(20, 20, 20, 0.25);
+
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  
+}
+
+.hologramas h2 {
+  width: 100px;
+}
+
+.realidade-virtual h2 {
+  width: 150px;
+}
+
+.hologramas, .internet, .vestiveis, .realidade-virtual {
+  position: relative;
+}
+
+.caixa1 img:hover, .robotica img:hover {
+  filter: brightness(1);
+}
+
+/* ESTILO MAIN - HEADER CAIXA2 */
+
+.header-caixa2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px 20px;
+  border-top: 1px solid #1E293B;
+}
+
+.ver-tudo {
+  display: flex;
+  gap: 12px;
+}
+
+
+/* ESTILO MAIN - CAIXA2 */
+
+.caixa2 {
+  display: flex;
+  gap: 15px;
+  justify-content:space-between;
+  place-content: center;
+}
+
+.caixa2 img {
+  width: 292px;
+}
+
+.caixa2 p {
+  width: 292px;
+  text-align: center;
+}
+
+.caixa2 h2 {
+  width: 80px;
+  height: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px; /* igualando ao "height" ele centraliza verticalmente */
+  border-radius: 4px;
+  background-color: var(--brand-color-dark);
+  box-shadow: 0px 4px 16px 0px rgba(20, 20, 20, 0.25);
+
+  position: absolute;
+  top: 5%;
+  left: 4%;
+}
+
+.hologramas2 h2 {
+  width: 110px;
+}
+
+.realidade-virtual2 h2 {
+  width: 160px;
+}
+
+.veiculos, .hologramas2, .realidade-virtual2, .internet2 {
+  position: relative;
+}
+
+
