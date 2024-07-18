@@ -1,0 +1,135 @@
+/* ESTILO GERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --principal-red: #E3646E;
+  --principal-purple: #BB72E9;
+  --principal-blue: #3996DB;
+  --principal-green: #82BC4F;
+  --principal-yellow: #EABD5F;
+
+  --base-gray-100: #0D0E11;
+  --base-gray-200: #16181D;
+  --base-gray-300: #292C34;
+  --base-gray-400: #878EA1;
+  --base-gray-500: #C0C4CE;
+  --base-gray-600: #E2E4E9;
+
+  --font-family-maven: "Maven Pro", sans-serif;
+  --font-family-incon: "Inconsolata", monospace;
+  --font-family-asap: "Asap", sans-serif;
+
+  --text-large-asap: bold 56px/120% var(--font-family-asap);
+  --text-medium-asap: bold 24px/120% var(--font-family-asap);
+  --text-small-asap: bold 24px/120% var(--font-family-asap);
+
+  --text-standard-incon: 20px/120% var(--font-family-incon);
+
+  --text-medium-maven: 16px/140% var(--font-family-maven);
+  --text-small-maven: 14px/140% var(--font-family-maven);
+}
+
+/* ESTILO DO HEADER */
+
+header {
+  background-image: url(./images/Background_Intro.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#profile img:nth-child(1) {
+  border: solid 2px var(--principal-red);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.avatar {
+  position: relative;
+}
+
+#profile img:nth-child(2) {
+  position: absolute;
+  top: 69%;
+  left: 66%;
+}
+
+#profile h2 {
+  font: var(--text-standard-incon);
+  color: var(--base-gray-500);
+  padding-top: 56px;
+}
+
+#profile span {
+  color: var(--principal-red);
+}
+
+#profile h1 {
+  color: var(--base-gray-600);
+  font: var(--text-large-asap);
+  padding-top: 8px;
+}
+
+#profile p {
+  width: 680px;
+  font: var(--text-small-maven);
+  color: var(--base-gray-400);
+  padding-top: 20px;
+}
+
+.linguagens {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.linguagens div {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  padding: 8px;
+  background-color: var(--base-gray-300);
+  border-radius: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  place-content: center;
+}
+
+.linguagens img:nth-child(1) {
+  color: var(--base-gray-500);
+}
+
+.linguagens img:nth-child(2) {
+  width: 50px;
+}
+
+.linguagens p {
+  font: var(--text-medium-maven);
+  color: var(--base-gray-500);
+}
+
+.seta-baixo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* ESTILO DO MAIN */
+
+main {
+  background-color: black;
+}
+
