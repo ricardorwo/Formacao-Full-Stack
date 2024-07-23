@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+
+  <title>Formulario de convite</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="festivite">
+      <img src="./images/Logo.svg" alt="">
+      <h1>Festivite</h1>
+      <p>Crie um convite digital para o seu evento</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="convite">
+      <div class="crie">
+        <h1>Crie seu convite</h1>
+        <div class="sobre">
+          <img src="./images/calendar.svg" alt="">
+          <p>Sobre o evento</p>
+        </div>
+
+        <div class="titulo">
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" placeholder="Nome do evento">
+        </div>
+
+
+        <div class="inicio-fim">
+          <div class="inicio">
+            <label for="inicio">Início</label>
+            <input type="date" id="inicio" placeholder="opa">
+          </div>
+
+          <div class="fim">
+            <label for="fim">Fim</label>
+            <input type="date" id="fim">
+          </div>
+        </div>
+
+
+        <p id="p2">Tipo</p>
+        <div class="tipo">
+          <div class="presencial">
+            <img src="./images/building-2.svg" alt="">
+            <label for="presencial">Presencial</label>
+            <input type="radio" id="presencial">
+          </div>
+
+          <div class="online">
+            <img src="./images/video.svg" alt="">
+            <label for="online">Online</label>
+            <input type="radio" id="online">
+          </div>
+        </div>
+
+        <div class="descricao">
+          <label for="descricao">Descrição</label>
+          <textarea name="descricao" id="descricao" placeholder="Escreva sobre os detalhes do evento"></textarea>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
