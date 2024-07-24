@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  font-size: 62.50%;
+
+  /* Cores - MARCA */
+  --snitap-sun: #FFCD1E;
+  --snitap-sky-mid: #06B6D4;
+  --snitap-sky-light: #67E8F9;
+  --snitap-joy-mid: #DB2777;
+  --snitap-joy-light: #F472B6;
+  --snitap-leaf-mid: #16A34A;
+
+  /* Cores - BASE */
+  --text: #000000;
+  --highlights: #000000;
+  --background: #FAFAFA;
+
+  /* Tipografia */
+  --text-sm: 1.2rem;
+  --text-base-1: 1.6rem;
+  --text-base-2: 1.8rem;
+  --text-base-3: 2rem
+  --text-lg: 6.4rem;
+
+
+  --font-family-inter: "Inter", sans-serif;
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-syne: "Syne", sans-serif;
+
+  --h1: 700 6.4rem/125% var(--font-family-syne);
+  --h2: 700 4rem/120% var(--font-family-syne);
+
+  --Button-label: 500 1.6rem/150% var(--font-family-montserrat);
+  --span: 500 1.4rem/150% var(--font-family-montserrat);
+}
