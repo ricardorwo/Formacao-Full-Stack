@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 3.2rem;
+}
+
+img {
+  width: 3.2rem;
+  height: 3.2rem;
+  transition: transform 500ms;
+}
+
+img[src*="logo"]:hover {
+  transform: rotate(90deg);
+}
+
+img[src*="shopping"]:hover {
+  transform: rotate(-30deg);
+}
+
+a {
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+a span {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.8rem;
+  right: -0.9rem;
+  background-color: var(--snitap-sun)
+}
