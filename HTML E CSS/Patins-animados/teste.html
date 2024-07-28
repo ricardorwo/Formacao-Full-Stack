@@ -3,64 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Header</title>
+    <title>Exemplo de Animação com Keyframes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <style>
-    /* Reset básico para limpar estilos padrão do navegador */
   * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-  /* Estilos para o header */
-  header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 0;
-  }
+/* .container {
+    border: solid 1px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+} */
 
-  nav ul {
-      list-style-type: none;
-      text-align: center;
-  }
+body {
+  background-color: black;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
 
-  nav ul li {
-      display: inline;
-  }
+.square {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  border: dashed 5px red;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: rotateAndColorChange 10s linear infinite;
+}
 
-  nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 20px;
-  }
+@keyframes rotateAndColorChange {
+    0% {
+        transform: rotate(0deg);
+        background-color: white;
+    }
+    33% {
+        transform: rotate(90deg);
+        background-color: greenyellow;
+    }
+    66% {
+        transform: rotate(180deg);
+        background-color: red;
+    }
+    100% {
+      transform: rotate(360deg);
+      background-color: grey;
+    }
+}
 
-  nav ul li a:hover {
-      background-color: #555;
-  }
-
-  /* Estilos para o conteúdo principal */
-  main {
-      padding: 20px;
-  }
-
+  
 </style>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Conteúdo principal da página -->
-        <h1>Bem-vindo à nossa página!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sapien ac lorem fringilla aliquam.</p>
-    </main>
+  <div class="square">
+    <p></p>
+  </div>
 </body>
 </html>

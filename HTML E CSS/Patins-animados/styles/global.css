@@ -38,3 +38,13 @@
   --Button-label: 500 1.6rem/150% var(--font-family-montserrat);
   --span: 500 1.4rem/150% var(--font-family-montserrat);
 }
+
+h1 {
+  color: var(--text);
+  font: var(--h1);
+}
+
+h2 {
+  color: var(--text);
+  font: var(--h2)
+}
