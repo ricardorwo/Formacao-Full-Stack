@@ -8,17 +8,17 @@ header {
   padding: 2rem 3.2rem;
 }
 
-img {
+header img {
   width: 3.2rem;
   height: 3.2rem;
   transition: transform 500ms;
 }
 
-img[src*="logo"]:hover {
+header img[src*="logo"]:hover {
   transform: rotate(90deg);
 }
 
-img[src*="shopping"]:hover {
+header img[src*="shopping"]:hover {
   transform: rotate(-30deg);
 }
 
@@ -31,7 +31,7 @@ a {
   position: relative;
 }
 
-a span {
+header a span {
   width: 2rem;
   height: 2rem;
   text-align: center;

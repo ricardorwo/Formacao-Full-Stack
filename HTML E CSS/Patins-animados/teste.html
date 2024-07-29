@@ -8,63 +8,18 @@
 </head>
 
 <style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #9b59b6;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* .container {
-    border: solid 1px red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-} */
-
-body {
-  background-color: black;
-  display: grid;
-  place-content: center;
-  height: 100vh;
-}
-
-.square {
-  display: grid;
-  place-content: center;
-  height: 100vh;
-  border: dashed 5px red;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  animation: rotateAndColorChange 10s linear infinite;
-}
-
-@keyframes rotateAndColorChange {
-    0% {
-        transform: rotate(0deg);
-        background-color: white;
-    }
-    33% {
-        transform: rotate(90deg);
-        background-color: greenyellow;
-    }
-    66% {
-        transform: rotate(180deg);
-        background-color: red;
-    }
-    100% {
-      transform: rotate(360deg);
-      background-color: grey;
-    }
-}
 
   
 </style>
 <body>
-  <div class="square">
-    <p></p>
+  <div class="box">
+    TESTE
   </div>
-</body>
 </html>

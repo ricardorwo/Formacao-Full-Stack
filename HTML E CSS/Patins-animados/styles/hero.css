@@ -110,3 +110,48 @@ h1 span:nth-child(3) {
   }
 
 }
+
+.buttons {
+  display: flex;
+  gap: 3.2rem;
+  margin-left: 3.2rem;
+  margin-top: 4.8rem;
+}
+
+.buttons img {
+  width: 24px;
+}
+.buy, .action, .action span {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font: var(--Button-label);
+}
+
+.buy {
+  background-color: var(--snitap-sun);
+  padding: 24px 48px;
+  border-radius: 5rem;
+  transition: 0.3s;
+}
+
+.buy:hover {
+  box-shadow: 0rem 0rem .8rem rgba(0, 0, 0, 0.432);
+  transform: scale(1.05);
+}
+
+.action span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffce1e56;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.action span:hover {
+  box-shadow: 0rem 0rem .8rem rgba(0, 0, 0, 0.432);
+  transform: scale(1.05);
+}
