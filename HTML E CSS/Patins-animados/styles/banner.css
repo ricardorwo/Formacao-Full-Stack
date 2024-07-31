@@ -1,0 +1,28 @@
+.banner {
+  width: 100%;
+  padding-block: 4rem;
+  overflow: hidden;
+
+  .scroller {
+    width: 100%;
+    padding-block: 1.6rem;
+    overflow: hidden;
+
+    .rolling {
+      display: flex;
+      gap: 2.5rem;
+
+      animation: rolling 2s linear infinite;
+    }
+  }
+
+  .bg-gradient-animate {
+    background: linear-gradient(90deg, #F472B6 0%, #67E8F9 100%);
+  }
+}
+
+@keyframes rolling {
+  to {
+    transform: translateX(-132px);
+  }
+}
