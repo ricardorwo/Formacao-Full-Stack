@@ -1,0 +1,28 @@
+
+.gallery .caixa {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3.2rem;
+}
+
+.gallery .imagem1, .imagem4 {
+  width: 49rem;
+}
+
+.gallery .imagem2, .imagem3 {
+  width: 70rem;
+}
+
+.gallery h1, h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.gallery h1 {
+  font: var(--h2);
+}
+
+.gallery h2 {
+  font: var(--h1);
+  margin-bottom: 2rem;
+}

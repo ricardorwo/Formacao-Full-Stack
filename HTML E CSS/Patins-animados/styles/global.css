@@ -48,7 +48,3 @@ h2 {
   color: var(--text);
   font: var(--h2)
 }
-
-html {
-  zoom: .5;
-}
