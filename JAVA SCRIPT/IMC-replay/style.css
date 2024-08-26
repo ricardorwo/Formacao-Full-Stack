@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: rgba(0, 0, 0, 0.459);
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  padding-top: 20px;
+  border-radius: 20px;
+  background-color: rgb(171, 228, 117);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.479);
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 35px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.233);
+}
+
+.peso, .altura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+button {
+  background-color: rgba(214, 96, 194, 0.644);
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 140px;
+  height: 40px;
+  font-weight: 800;
+  transition: .3s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+p {
+  text-align: center;
+  font-size: 22px;
+}
+
+p span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
