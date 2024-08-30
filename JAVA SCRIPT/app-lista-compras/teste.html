@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <!-- Favicon -->
+
+  <title>Lista de Compras</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      font-size: 62.5%;
+      --font-title: 700 2.4rem/3.2rem "Inter", system-ui;
+      --font-label: 600 1.6rem/2.0rem "Inter", system-ui;
+      --font-paragraph: 500 1.6rem/2.0rem "Inter", system-ui;
+      --font-link: 500 1.4rem/1.6rem "Inter", system-ui;
+      --font-placeholder: 400 1.6rem/2.2rem "Inter", system-ui;
+      --background-primary: #F4F5FB;
+      --background-secondary: #FFFFFF;
+      --color-brand: #CA3884;
+      --color-brand-hover: #A52C6B;
+      --color-danger: #C93847;
+      --content-primary: #080B12;
+      --content-secondary: #374151;
+      --content-tertiary: #9ca3af77;
+      --always-white: #FFFFFF;
+      --border-primary: #D1D5DB;
+      --border-hover: #B9C2D0;
+    }
+
+    html {
+      background: var(--background-primary);
+      font-size: 1.6rem;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 63.0rem;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 2.5rem;
+      margin-bottom: 3.0rem;
+    }
+
+    .back {
+      color: var(--color-brand);
+      font: var(--font-link);
+      display: flex;
+      gap: .4rem;
+      background: none;
+      border: none;
+      margin-bottom: 1.6rem;
+    }
+
+    h1 {
+      font: var(--font-title);
+    }
+
+    .new-item {
+      display: flex;
+      gap: 2.0rem;
+      text-align: center;
+      margin-top: 2.0rem;
+      margin-bottom: 2.0rem;
+    }
+
+    .new-item input {
+      font: var(--font-paragraph);
+      color: #000000; /* Cor do texto alterada para preto */
+      border-radius: 1.2rem;
+      border: 1px solid var(--border-primary);
+      background-color: var(--background-secondary);
+      height: 4.4rem;
+      padding: 1.1rem 1.8rem;
+    }
+
+    .new-item input::placeholder {
+      font: var(--font-placeholder);
+      color: #9ca3af80;
+    }
+
+    .new-item input:nth-child(1) {
+      width: 45.0rem;
+      color: var(--content-secondary);
+    }
+
+    .new-item input:nth-child(2) {
+      background: var(--color-brand);
+      color: var(--always-white);
+      width: 16.0rem;
+      border: none;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    .new-item input:nth-child(2):hover {
+      cursor: pointer;
+      background-color: var(--color-brand-hover); /* Destaque leve */
+    }
+
+    .new-item input:nth-child(2):active {
+      transform: scale(0.98); /* Efeito de clique */
+    }
+
+    .list-itens {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .list-itens .item label input {
+      border: 1px solid var(--border-primary);
+    }
+
+    .item {
+      background-color: var(--background-secondary);
+      border: none;
+      border-radius: 1.2rem;
+      display: flex;
+      padding: 0 1.2rem;
+    }
+
+    label {
+      font: var(--font-label);
+      color: var(--content-secondary);
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      width: 63.0rem;
+      height: 4.9rem;
+      line-height: 4.9rem;
+    }
+
+    .warning {
+      background-color: var(--color-danger);
+      color: var(--always-white);
+      font: var(--font-label);
+      border-radius: 1.2rem;
+      width: 63.0rem;
+      height: 4.4rem;
+      display: flex;
+      border: solid .1rem red;
+      padding: 1.2rem;
+      justify-content: space-between;
+      margin-bottom: 3.0rem;
+      margin-top: 3.6rem;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+      visibility: hidden;
+    }
+
+    .warning.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .remove-icon {
+      cursor: pointer;
+      transition: transform 0.1s ease, filter 0.1s ease;
+    }
+
+    .remove-icon:hover {
+      filter: brightness(0.8); /* Destaque leve */
+      transform: scale(1.1); /* Efeito de destaque */
+    }
+
+    @media screen and (max-width: 720px) {
+      html {
+        margin: 0 4%;
+      }
+
+      .new-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .new-item input {
+        width: 100%;
+        max-width: 33rem;
+      }
+
+      .item {
+        width: 100%;
+        max-width: 33rem;
+        margin: 0 auto;
+      }
+
+      .warning {
+        width: 100%;
+        max-width: 33rem;
+        margin: 4rem auto;
+      }
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <header>
+    <img src="./assets/logo.svg" alt="">
+  </header>
+
+  <main>
+    <button class="back">
+      <img src="./icons/arrow-left.svg" alt="">
+      <p>Voltar</p>
+    </button>
+    
+    <h1>Compras da semana</h1>
+
+    <div class="new-item">
+      <input type="text" placeholder="Adicione um novo item">
+      <input type="button" value="Adicionar item">
+    </div>
+
+    <div class="list-itens"></div>
+
+    <div class="warning">
+      <div class="text">
+        <img src="./icons/warning.svg" alt="">
+        <p>O item foi removido da lista</p>
+      </div>
+      <img src="./icons/x.svg" alt="">
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const addButton = document.querySelector('.new-item input[type="button"]');
+      const newItemInput = document.querySelector('.new-item input[type="text"]');
+      const listItemsContainer = document.querySelector('.list-itens');
+      const warningMessage = document.querySelector('.warning');
+  
+      // Função para adicionar um novo item à lista
+      function addItem() {
+        const itemText = newItemInput.value.trim();
+        if (itemText === '') return;
+  
+        // Criação do novo item
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'item';
+  
+        itemDiv.innerHTML = `
+          <label>
+            <input type="checkbox">
+            ${itemText}
+          </label>
+          <img src="./icons/trash.svg" alt="Remover item" class="remove-icon">
+        `;
+  
+        // Adiciona o novo item à lista
+        listItemsContainer.appendChild(itemDiv);
+  
+        // Limpa o campo de entrada
+        newItemInput.value = '';
+      }
+  
+      // Função para remover um item da lista
+      function removeItem(event) {
+        if (event.target.classList.contains('remove-icon')) {
+          // Remove o item da lista
+          const itemToRemove = event.target.closest('.item');
+          itemToRemove.remove();
+  
+          // Exibe a mensagem de alerta
+          warningMessage.classList.add('show');
+  
+          // Verifica se a lista está vazia e oculta a mensagem de alerta se necessário
+          if (listItemsContainer.children.length === 0) {
+            setTimeout(() => {
+              warningMessage.classList.remove('show');
+            }, 0); // A mensagem de alerta desaparecerá imediatamente
+          }
+        }
+      }
+  
+      // Adiciona um novo item ao clicar no botão
+      addButton.addEventListener('click', addItem);
+  
+      // Remove um item ao clicar no ícone da lixeira
+      listItemsContainer.addEventListener('click', removeItem);
+  
+      // Fecha a mensagem de alerta ao clicar no ícone de "x"
+      warningMessage.querySelector('img:last-child').addEventListener('click', () => {
+        warningMessage.classList.remove('show');
+      });
+    });
+  </script>
+</body>
+</html>

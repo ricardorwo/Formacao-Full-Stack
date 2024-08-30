@@ -6,17 +6,15 @@
 
 :root {
   font-size: 62.5%;
-
   --font-title: 700 2.4rem/3.2rem "Inter", system-ui;
   --font-label: 600 1.6rem/2.0rem "Inter", system-ui;
   --font-paragraph: 500 1.6rem/2.0rem "Inter", system-ui;
   --font-link: 500 1.4rem/1.6rem "Inter", system-ui;
   --font-placeholder: 400 1.6rem/2.2rem "Inter", system-ui;
-
   --background-primary: #F4F5FB;
   --background-secondary: #FFFFFF;
   --color-brand: #CA3884;
-  --color-brand-hover: A52C6B;
+  --color-brand-hover: #A52C6B;
   --color-danger: #C93847;
   --content-primary: #080B12;
   --content-secondary: #374151;
@@ -66,7 +64,7 @@ h1 {
 
 .new-item input {
   font: var(--font-paragraph);
-  color: var(--content-secondary);
+  color: #000000; /* Cor do texto alterada para preto */
   border-radius: 1.2rem;
   border: 1px solid var(--border-primary);
   background-color: var(--background-secondary);
@@ -81,17 +79,24 @@ h1 {
 
 .new-item input:nth-child(1) {
   width: 45.0rem;
-  color: var(--content-tertiary);
+  color: var(--content-secondary);
 }
 
 .new-item input:nth-child(2) {
   background: var(--color-brand);
   color: var(--always-white);
   width: 16.0rem;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .new-item input:nth-child(2):hover {
   cursor: pointer;
+  background-color: var(--color-brand-hover); /* Destaque leve */
+}
+
+.new-item input:nth-child(2):active {
+  transform: scale(0.98); /* Efeito de clique */
 }
 
 .list-itens {
@@ -136,6 +141,14 @@ label {
   justify-content: space-between;
   margin-bottom: 3.0rem;
   margin-top: 3.6rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  visibility: hidden;
+}
+
+.warning.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .text {
@@ -144,8 +157,17 @@ label {
   gap: .8rem;
 }
 
-@media screen and (max-width: 720px) {
+.remove-icon {
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
 
+.remove-icon:hover {
+  filter: brightness(0.8); /* Destaque leve */
+  transform: scale(1.1); /* Efeito de destaque */
+}
+
+@media screen and (max-width: 720px) {
   html {
     margin: 0 4%;
   }
