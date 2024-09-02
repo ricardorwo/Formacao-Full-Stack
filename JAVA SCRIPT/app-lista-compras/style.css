@@ -64,7 +64,7 @@ h1 {
 
 .new-item input {
   font: var(--font-paragraph);
-  color: #000000; /* Cor do texto alterada para preto */
+  color: #000000;
   border-radius: 1.2rem;
   border: 1px solid var(--border-primary);
   background-color: var(--background-secondary);
@@ -92,11 +92,11 @@ h1 {
 
 .new-item input:nth-child(2):hover {
   cursor: pointer;
-  background-color: var(--color-brand-hover); /* Destaque leve */
+  background-color: var(--color-brand-hover);
 }
 
 .new-item input:nth-child(2):active {
-  transform: scale(0.98); /* Efeito de clique */
+  transform: scale(0.98);
 }
 
 .list-itens {
@@ -163,8 +163,8 @@ label {
 }
 
 .remove-icon:hover {
-  filter: brightness(0.8); /* Destaque leve */
-  transform: scale(1.1); /* Efeito de destaque */
+  filter: brightness(0.8);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 720px) {
